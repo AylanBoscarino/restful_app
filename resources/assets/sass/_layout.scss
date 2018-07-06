@@ -1,0 +1,44 @@
+.navbar-layout {
+    background-color: $navbar-color; 
+    a{
+        color: #fff;
+        font-weight: bolder;
+    }      
+}
+body{
+    background-color: $featured-color !important;
+    height: 100%;
+    min-height: 100%;
+}
+
+body > footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $navbar-color;
+    color: white;
+    text-align: right;
+}
+
+
+.list-group{
+    
+    max-height: 400px;
+    overflow-y:auto ;    
+    float: right; 
+}
+  
+.home{
+    margin-top: 60px;    
+    width: 100%;
+    text-align: center;
+    h1{
+        color: #fff !important;
+        font-weight: 900;
+    }
+    p{
+        color:#f0f0f0 !important;
+    }
+    
+}
