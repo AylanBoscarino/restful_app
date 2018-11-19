@@ -8,8 +8,8 @@ use App\Repositories\InterfaceAlunos;
 
 class AlunosController extends Controller
 {
-    public function __construct(){
-        $this->aluno = app(InterfaceAlunos::class);    
+    public function __construct(InterfaceAlunos $alunos){
+        $this->aluno = $alunos;   
     }
     /**
      * Display a listing of the resource.

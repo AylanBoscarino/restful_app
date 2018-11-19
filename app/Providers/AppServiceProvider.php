@@ -4,7 +4,6 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
-use App\Repositories;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -25,8 +24,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind(Repositories\InterfaceAlunos::class, function(){
-            return new Repositories\AlunosRepository();
-        });
+        $this->app->bind(
+            'App\Repositories\InterfaceAlunos',
+            'App\Repositories\AlunosRepository'
+        );
     }
 }

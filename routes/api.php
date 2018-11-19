@@ -1,4 +1,4 @@
-<?php
+	<?php
 
 use Illuminate\Http\Request;
 
@@ -17,9 +17,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::group(['prefix' => 'alunos'], function(){
-	Route::get('/', 'AlunosController@index');
+	Route::get('/', 'AlunosController@index')->name('index');
 	Route::post('/', 'AlunosController@store')->name('store');
-	Route::get('/{id}', 'AlunosController@show');
+	Route::get('/{id}', 'AlunosController@show')->name('show');
 	Route::post('/{id}', 'AlunosController@update')->name('update');
 	Route::delete('/{id}', 'AlunosController@destroy')->name('destroy');
 });
