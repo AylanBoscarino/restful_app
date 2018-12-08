@@ -16,7 +16,7 @@ class AlunosRepository implements InterfaceAlunos
     public function store($request){
     	$aluno = Aluno::create([
     		'name' => $request->name,
-    		'class' => $request->class,
+    		'team' => $request->team,
     	]);
     	$aluno->save();
     	return redirect(route('lista')) ;
@@ -26,7 +26,7 @@ class AlunosRepository implements InterfaceAlunos
 		$aluno = Aluno::find($id);
 		
 		$aluno->name = $request->name;
-		$aluno->class = $request->class;
+		$aluno->team = $request->team;
     	$aluno->save();
     	return $this->lista();
     }

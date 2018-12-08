@@ -8,7 +8,7 @@
                 @foreach($lista as $aluno)
                 <li class="list-group-item">
                     <h5>{{$aluno->name}}</h5>
-                    <h5>{{$aluno->class}}</h5>
+                    <h5>{{$aluno->team}}</h5>
                 <a href="#" data-id="{{$aluno->id}}" data-route="{{url(route('destroy', $aluno->id))}}" class="btn btn-danger excluir">Excluir</a>
                     <a href="{{route('editar', $aluno->id)}}" class="btn btn-warning ">Editar</a>
                 </li>
@@ -18,4 +18,7 @@
         </ul>
     </div>
 </section>
+<script>
+    
+</script>
 @endsection

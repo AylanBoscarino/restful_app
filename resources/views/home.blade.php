@@ -3,7 +3,7 @@
 
 <section>
 	<div class="container home">
-		<h1>Minha Home Page</h1>
+		<h1>Minha Página Principal</h1>
 		<p>
 			<h2>Essa é a home do meu pequeno app!</h2>
 			<br>
@@ -11,6 +11,8 @@
 		</p>
 
 
+
 	</div>
 </section>
+<example-component></example-component>
 @endsection

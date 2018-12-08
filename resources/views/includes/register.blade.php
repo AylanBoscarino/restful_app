@@ -21,7 +21,7 @@
                             <input type="text" class="form-control" placeholder="Nome" name="name" id="name" >
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Classe" name="class" id="class" >
+                            <input type="text" class="form-control" placeholder="Classe" name="team" id="team" >
                         </div>
                         <div class="form-group">
                             <button class="btn btn-block btn-success" type="submit" >Salvar</button>

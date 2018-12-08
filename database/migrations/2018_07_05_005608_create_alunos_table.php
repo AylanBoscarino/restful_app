@@ -16,7 +16,7 @@ class CreateAlunosTable extends Migration
         Schema::create('alunos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('class');
+            $table->string('team');
             $table->timestamps();
         });
     }

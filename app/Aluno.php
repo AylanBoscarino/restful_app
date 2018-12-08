@@ -9,6 +9,6 @@ class Aluno extends Model
 {
 	protected $fillable = [
 		'name',
-		'class',
+		'team',
 	];	
 }
